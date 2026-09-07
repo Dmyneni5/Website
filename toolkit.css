@@ -134,3 +134,30 @@
   .education-section { padding-bottom: 28px; }
   .profile-section { padding-top: 10px; }
 }
+
+/* Final unified spacing rhythm. */
+.intro-section { padding-top: 72px; padding-bottom: 38px; }
+.experience-section { padding-top: 22px; padding-bottom: 34px; }
+.toolkit-section { padding-top: 16px; padding-bottom: 38px; }
+.education-section { padding-top: 22px; padding-bottom: 34px; }
+.profile-section { padding-top: 16px; padding-bottom: 34px; }
+.contact-section { padding-top: 64px; padding-bottom: 72px; }
+.bento-grid { margin-top: 38px; }
+.timeline { margin-top: 40px; }
+.toolkit-groups { margin-top: 34px; }
+.education-grid { margin-top: 40px; }
+.certifications { margin-top: 14px; }
+
+@media (max-width: 800px) {
+  .intro-section { padding-top: 52px; padding-bottom: 28px; }
+  .experience-section { padding-top: 14px; padding-bottom: 24px; }
+  .toolkit-section { padding-top: 8px; padding-bottom: 28px; }
+  .education-section { padding-top: 14px; padding-bottom: 24px; }
+  .profile-section { padding-top: 8px; padding-bottom: 28px; }
+  .contact-section { padding-top: 54px; padding-bottom: 60px; }
+  .bento-grid { margin-top: 28px; }
+  .timeline { margin-top: 30px; }
+  .toolkit-groups { margin-top: 26px; }
+  .education-grid { margin-top: 28px; }
+  .certifications { margin-top: 12px; }
+}
