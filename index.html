@@ -1,91 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="!! Know me more !!" name="!! Know me more !!">
-  <meta name="google" content="notranslate" />
-
-
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-
-
-  <link rel = "icon" href = "./assets/images/Image.png" type = "image/x-icon">
-
-  <title>Portfolio</title>
-
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
-
-<body class="minimal">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./projects.html" title="">02 : Projects</a></li>
-          <li><a href="./about.html" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-          <li><a href="./experience.html" title="">05 : Experience</a></li>
-          <li><a href="./achievements.html" title="">06 : Achievements</a></li>
-          <li><a href="assets/DivyaMyneniResume.pdf" title="" target="_blank">07 : Resume</a></li>
-
-        </ul>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="Divya Myneni is an Oracle Fusion Cloud security specialist focused on identity, access governance, RBAC, SOX controls, and enterprise applications.">
+  <meta property="og:title" content="Divya Myneni — Oracle Fusion Cloud Security">
+  <meta property="og:description" content="Designing governed, audit-ready access across Oracle HCM, ERP, and SCM.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://127.0.0.1:4173/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Divya Myneni — Oracle Fusion Cloud Security">
+  <meta name="twitter:description" content="Designing governed, audit-ready access across Oracle HCM, ERP, and SCM.">
+  <meta name="twitter:image" content="http://127.0.0.1:4173/assets/og.png">
+  <title>Divya Myneni — Oracle Cloud Security</title>
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="main.3f6952e4.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Divya Myneni home">DM</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="assets/Divya-Myneni-Security-Resume.docx" download>Resume</a>
       </div>
-    </div>
-  </nav>
-</header>
-<!-- Add your site or app content here -->
-<div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/3d-rendering-financial-neon-bulls.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hello World,<br>
-                <span id="typed-strings">
-                  <span>I am Divya Myneni</span>
-                  <span>"I'm a Quant sorcerer and a Quant Conjurer, weaving code and harnessing Machine Learning models to create Financial wonders."</span>
-                  <span></span>
-                </span>
-                <span id="typed"></span>
-              </h1>
-            </div>
-          </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content reveal visible">
+        <p class="eyebrow">Oracle Fusion Cloud Security</p>
+        <h1 id="hero-title">Access, designed<br>with intention.</h1>
+        <p class="hero-copy">I’m Divya Myneni, an information security analyst who builds governed, audit-ready access across Oracle HCM, ERP, and SCM.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experience">Explore my work</a>
+          <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="security-orbit" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="core"><span>RBAC</span></div>
+          <span class="orbit-label label-one">Identity</span><span class="orbit-label label-two">Controls</span><span class="orbit-label label-three">Cloud</span>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-  <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var typed = new Typed('#typed', {
-                stringsElement: '#typed-strings',
-                typeSpeed: 20, // Adjust typing speed here (milliseconds per character)
-                loop: true
-            });
-        });
-  </script>
+    <section class="preview-strip" aria-label="Professional summary">
+      <p><strong>5+ years</strong><span>Enterprise applications</span></p>
+      <i aria-hidden="true"></i>
+      <p><strong>4 years</strong><span>Role-based access design</span></p>
+      <i aria-hidden="true"></i>
+      <p><strong>Dallas</strong><span>Texas, USA</span></p>
+    </section>
 
+    <section class="section intro-section" id="expertise">
+      <div class="section-heading reveal">
+        <p class="eyebrow">What I do</p>
+        <h2>Security that works<br>for people and controls.</h2>
+        <p>I connect business requirements, identity administration, and compliance evidence into one dependable access model.</p>
+      </div>
+      <div class="bento-grid">
+        <article class="bento-card bento-dark bento-wide reveal">
+          <span class="card-number">01</span>
+          <div>
+            <p class="card-kicker">Security architecture</p>
+            <h3>Role design, from privilege to policy.</h3>
+            <p>Custom job, duty, abstract, and data roles supported by thoughtful hierarchies, data security policies, and sensitive-access controls.</p>
+          </div>
+          <div class="role-stack" aria-hidden="true"><span>Data role</span><span>Job role</span><span>Duty</span><span>Privilege</span></div>
+        </article>
+        <article class="bento-card bento-blue reveal">
+          <span class="card-number">02</span>
+          <div>
+            <p class="card-kicker">Identity &amp; access</p>
+            <h3>The right access. At the right moment.</h3>
+            <p>Provisioning, deprovisioning, role changes, HCM lifecycle administration, and authentication through Oracle IAM / IDCS.</p>
+          </div>
+          <div class="status-pill"><span></span> Governed</div>
+        </article>
+        <article class="bento-card bento-light reveal">
+          <span class="card-number">03</span>
+          <div>
+            <p class="card-kicker">Compliance &amp; audit</p>
+            <h3>Evidence built in.</h3>
+            <p>SOD analysis, quarterly user access reviews, SOX / ITGC control support, risk assessment, and audit-ready documentation.</p>
+          </div>
+          <div class="metric"><strong>SOX</strong><span>Controls supported</span></div>
+        </article>
+        <article class="bento-card bento-light reveal">
+          <span class="card-number">04</span>
+          <div>
+            <p class="card-kicker">Reporting security</p>
+            <h3>Visibility with boundaries.</h3>
+            <p>OTBI and BI Publisher security, catalog permissions, SQL, and custom audit reporting for roles, privileges, and user access.</p>
+          </div>
+          <div class="mini-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        </article>
+      </div>
+    </section>
 
-<script type="text/javascript" src="./main.70a66962.js"></script></body>
+    <section class="section experience-section" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Enterprise security,<br>end to end.</h2>
+      </div>
+      <div class="timeline">
+        <article class="role reveal">
+          <div class="role-meta"><span class="role-date">Nov 2023 — Present</span><span class="current-dot">Current</span></div>
+          <div class="role-main">
+            <p class="company">Providence Health &amp; Services · Seattle, USA</p>
+            <h3>Senior Information Security Analyst</h3>
+            <p class="role-summary">Design and maintain Oracle Fusion security architecture across HCM, ERP, and SCM while owning identity administration, access requests, audit evidence, report security, and post-release validation.</p>
+            <ul class="role-points">
+              <li>Translate business requirements into governed roles, privileges, hierarchies, and data security policies.</li>
+              <li>Support SOX access controls and remediate provisioning, termination, and review findings.</li>
+              <li>Lead quarterly release and P2T access validation, analyst mentoring, and knowledge transfer.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="role reveal">
+          <div class="role-meta"><span class="role-date">Aug 2022 — Nov 2023</span></div>
+          <div class="role-main">
+            <p class="company">ABM Industries · Texas, USA</p>
+            <h3>ERP Security Analyst</h3>
+            <p class="role-summary">Designed and deployed Oracle Cloud ERP security for AP, AR, GL, and Fixed Assets, including custom roles, SOD analysis, governance standards, user access reviews, and security audit reports.</p>
+            <ul class="role-points">
+              <li>Built custom GL and AP roles from duty-role and privilege analysis.</li>
+              <li>Established role management standards and quarterly UAR certification.</li>
+              <li>Partnered with Oracle Support to resolve security defects during UAT.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="role reveal">
+          <div class="role-meta"><span class="role-date">Aug 2020 — Aug 2021</span></div>
+          <div class="role-main">
+            <p class="company">Faurecia India Pvt. Ltd. · Bangalore, India</p>
+            <h3>Graduate Engineer Trainee</h3>
+            <p class="role-summary">Documented AS-IS and TO-BE processes, supported process owners and controllers, and helped deliver application improvements through training, reconciliation, teamwork, and structured problem solving.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <section class="section toolkit-section" aria-labelledby="toolkit-title">
+      <div class="toolkit-panel reveal">
+        <p class="eyebrow">Toolkit</p>
+        <h2 id="toolkit-title">Built for the Oracle ecosystem.</h2>
+        <div class="skills-cloud" aria-label="Professional tools and skills">
+          <span>Oracle Fusion Cloud</span><span>Security Console</span><span>Oracle IAM / IDCS</span><span>Risk Management Cloud</span><span>ServiceNow</span><span>OTBI</span><span>BI Publisher</span><span>SQL</span><span>Power BI</span><span>Tableau</span><span>SharePoint</span><span>UAT</span>
+        </div>
+        <div class="modules"><p>HCM</p><p>ERP</p><p>SCM</p></div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Education &amp; credentials</p>
+        <h2>Business insight.<br>Technical depth.</h2>
+      </div>
+      <div class="education-grid">
+        <article class="degree degree-feature reveal">
+          <div class="degree-copy">
+            <span>2023</span>
+            <h3>Master of Science</h3>
+            <p>Business Analytics and Project Management</p>
+            <strong>University of Connecticut</strong>
+          </div>
+          <div class="degree-mark">MS</div>
+        </article>
+        <article class="degree reveal">
+          <span>2020</span>
+          <h3>Bachelor of Technology</h3>
+          <p>Mechanical Engineering</p>
+          <strong>Mahatma Gandhi Institute of Technology</strong>
+        </article>
+        <article class="degree credential reveal">
+          <span>Oracle Certified</span>
+          <h3>Foundations Associate</h3>
+          <p>ERP and HCM</p>
+          <strong>Two Oracle credentials</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section profile-section">
+      <div class="profile-card reveal">
+        <div class="profile-image-wrap"><img src="assets/images/Image.png" alt="Divya Myneni in graduation attire" loading="lazy"></div>
+        <div class="profile-copy">
+          <p class="eyebrow">About me</p>
+          <h2>Clarity in every layer.</h2>
+          <p>I bring a business analytics mindset to information security: understand the process, isolate the risk, design the access, and leave behind evidence people can trust.</p>
+          <a class="text-link" href="assets/Divya-Myneni-Security-Resume.docx" download>Download my resume <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let’s make access<br>make sense.</h2>
+        <p class="contact-copy">Open to conversations about Oracle Cloud security, identity and access governance, and enterprise application controls.</p>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:divyamyneni5@gmail.com">divyamyneni5@gmail.com</a>
+          <a class="text-link light-link" href="tel:+18608799005">860-879-9005</a>
+        </div>
+        <p class="location">Dallas, Texas, USA</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="wordmark" href="#top" aria-label="Back to top">DM</a><p>Divya Myneni · <span id="year"></span></p><a href="#top">Back to top ↑</a></footer>
+  <script src="portfolio.js"></script>
+</body>
 </html>
