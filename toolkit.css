@@ -57,12 +57,18 @@
 
 /* Compact rhythm across the full portfolio. */
 .section { padding-top: 110px; padding-bottom: 110px; }
+.intro-section { padding-bottom: 48px; }
+.experience-section { padding-top: 32px; }
+.experience-section { padding-bottom: 40px; }
+.toolkit-section { padding-top: 20px; }
 .bento-grid { gap: 16px; margin-top: 52px; }
 .bento-card { min-height: 420px; padding: 36px; }
 .bento-wide { min-height: 410px; }
 .timeline { margin-top: 54px; }
 .role { padding-top: 44px; padding-bottom: 44px; }
 .toolkit-section, .profile-section { padding-top: 24px; }
+.toolkit-section { padding-bottom: 48px; }
+.education-section { padding-top: 32px; }
 .toolkit-panel { padding: 58px; }
 .toolkit-groups { gap: 11px; margin-top: 42px; }
 .toolkit-group { padding: 24px; }
@@ -77,6 +83,10 @@
 
 @media (max-width: 800px) {
   .section { padding: 76px 20px; }
+  .intro-section { padding-bottom: 34px; }
+  .experience-section { padding-top: 20px; }
+  .experience-section { padding-bottom: 28px; }
+  .toolkit-section { padding-top: 10px; }
   .preview-strip { min-height: 116px; padding: 22px 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
   .preview-strip i { display: none; }
   .preview-strip strong { font-size: 18px; }
@@ -89,6 +99,8 @@
   .timeline { margin-top: 40px; }
   .role { padding: 34px 0; }
   .toolkit-section, .profile-section { padding-top: 12px; }
+  .toolkit-section { padding-bottom: 34px; }
+  .education-section { padding-top: 20px; }
   .toolkit-panel { padding: 34px 22px; }
   .toolkit-groups { margin-top: 34px; gap: 10px; }
   .toolkit-group { padding: 20px; }
@@ -110,4 +122,15 @@
   .bento-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .bento-wide { grid-column: span 3; }
   .education-grid > .degree:not(.degree-feature) { grid-column: 1 / -1; min-height: 240px; }
+}
+
+/* Tight section-to-section transitions. */
+.toolkit-section { padding-top: 20px; }
+.education-section { padding-bottom: 40px; }
+.profile-section { padding-top: 20px; }
+
+@media (max-width: 800px) {
+  .toolkit-section { padding-top: 10px; }
+  .education-section { padding-bottom: 28px; }
+  .profile-section { padding-top: 10px; }
 }
