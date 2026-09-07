@@ -22,6 +22,10 @@
 .module-grid strong { font-size: 30px; letter-spacing: -.04em; }
 .module-grid span { color: #a1a1a6; font-size: 14px; line-height: 1.55; }
 
+/* Keep the feature card compact now that its copy carries more detail. */
+.bento-wide { min-height: 440px; }
+.bento-wide .role-stack { height: 88px; margin-top: 24px; }
+
 .certifications { margin-top: 22px; padding: 40px; border-radius: 30px; background: #fff; }
 .certifications-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; cursor: pointer; list-style: none; }
 .certifications-heading::-webkit-details-marker { display: none; }
@@ -44,8 +48,66 @@
   .toolkit-groups, .module-grid { grid-template-columns: 1fr; }
   .toolkit-tools, .toolkit-modules { grid-column: auto; }
   .toolkit-group { padding: 22px; }
+  .bento-wide { min-height: 420px; }
   .certifications { padding: 28px 22px; }
   .certifications-heading { align-items: flex-start; flex-direction: column; }
   .certification-list li { grid-template-columns: 32px 1fr; gap: 12px; }
   .certification-list em { grid-column: 2; }
+}
+
+/* Compact rhythm across the full portfolio. */
+.section { padding-top: 110px; padding-bottom: 110px; }
+.bento-grid { gap: 16px; margin-top: 52px; }
+.bento-card { min-height: 420px; padding: 36px; }
+.bento-wide { min-height: 410px; }
+.timeline { margin-top: 54px; }
+.role { padding-top: 44px; padding-bottom: 44px; }
+.toolkit-section, .profile-section { padding-top: 24px; }
+.toolkit-panel { padding: 58px; }
+.toolkit-groups { gap: 11px; margin-top: 42px; }
+.toolkit-group { padding: 24px; }
+.education-grid { margin-top: 52px; }
+.degree { min-height: 290px; }
+.degree-feature { min-height: 300px; grid-template-columns: 1fr; }
+.profile-card { min-height: 540px; }
+.profile-image-wrap { height: auto; aspect-ratio: 4 / 5; }
+.profile-image-wrap img { object-fit: contain; object-position: center; }
+.profile-copy { padding: 58px; }
+.contact-section { padding-top: 105px; padding-bottom: 105px; }
+
+@media (max-width: 800px) {
+  .section { padding: 76px 20px; }
+  .preview-strip { min-height: 116px; padding: 22px 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .preview-strip i { display: none; }
+  .preview-strip strong { font-size: 18px; }
+  .preview-strip span { font-size: 11px; }
+  .bento-grid { margin-top: 40px; gap: 12px; }
+  .bento-card, .bento-wide { min-height: 0; padding: 28px; }
+  .bento-card { gap: 28px; }
+  .bento-wide .role-stack { height: 72px; margin-top: 10px; }
+  .role-stack span { padding: 13px 8px; }
+  .timeline { margin-top: 40px; }
+  .role { padding: 34px 0; }
+  .toolkit-section, .profile-section { padding-top: 12px; }
+  .toolkit-panel { padding: 34px 22px; }
+  .toolkit-groups { margin-top: 34px; gap: 10px; }
+  .toolkit-group { padding: 20px; }
+  .module-grid div { min-height: 0; }
+  .education-grid { margin-top: 40px; gap: 12px; }
+  .degree, .degree-feature { min-height: 260px; padding: 28px; }
+  .profile-card { min-height: 0; }
+  .profile-image-wrap { height: auto; aspect-ratio: 4 / 5; }
+  .profile-copy { padding: 38px 28px; }
+  .contact-section { padding: 82px 20px; }
+  .location { margin-top: 38px; }
+}
+
+@media (max-width: 520px) {
+  .preview-strip { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 801px) {
+  .bento-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .bento-wide { grid-column: span 3; }
+  .education-grid > .degree:not(.degree-feature) { grid-column: 1 / -1; min-height: 240px; }
 }
